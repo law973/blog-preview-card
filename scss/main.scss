@@ -1,0 +1,11 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+// Import SCSS partials
+@import 'variables';
+@import 'reset';
+@import 'screen-reader-only';
+@import 'footer';

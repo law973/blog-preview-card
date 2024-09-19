@@ -1,0 +1,16 @@
+{
+  "name": "blog-preview-card-main",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Blog Preview Card Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --source-map scss/main.scss:css/compiled_style.css",
+    "sass-prod": "sass --no-source-map --style=compressed scss/main.scss:css/compiled_style.css"
+  },
+  "author": "Levi Wright",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.1"
+  }
+}
