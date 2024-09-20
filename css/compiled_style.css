@@ -33,6 +33,7 @@ body {
   gap: 1.5rem;
   justify-content: center;
   line-height: 1.5;
+  min-height: fit-content;
   text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -79,15 +80,16 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 1rem;
   padding: 24px;
-  width: clamp(20.438rem, 85vw, 24rem);
+  width: clamp(17.5rem, 87vw, 24rem);
 }
 
 .blog_image {
   border-radius: 10px;
   height: 12.5rem;
   object-fit: cover;
-  width: 17.438rem, 72vw, 21rem;
+  width: 100%;
 }
 
 .content {
@@ -100,6 +102,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: var(--yellow);
   border-radius: 4px;
   font: 800 clamp(0.75rem, 3vw, 0.875rem) "Figtree", sans-serif;
+  line-height: 1.5;
   padding: 4px 12px;
   width: fit-content;
 }
@@ -107,15 +110,18 @@ p, h1, h2, h3, h4, h5, h6 {
 .content__description {
   color: var(--gray-500);
   font: 500 clamp(0.875rem, 3.5vw, 1rem) "Figtree", sans-serif;
+  line-height: 1.5;
 }
 
 .content__publish_date {
   font: 500 clamp(0.75rem, 3vw, 0.875rem) "Figtree", sans-serif;
+  line-height: 1.5;
 }
 
 .content__title {
   color: var(--gray-950);
   font: 800 clamp(1.25rem, 5.1vw, 1.5rem) "Figtree", sans-serif;
+  line-height: 1.5;
   text-decoration: none;
 }
 .content__title:hover {
@@ -135,10 +141,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .author__name {
   font: 800 0.875rem "Figtree", sans-serif;
+  line-height: 1.5;
 }
 
 .attribution {
   font: 500 clamp(0.688rem, 2.7vw, 0.875rem) "Figtree", sans-serif;
+  margin-bottom: 1rem;
 }
 .attribution a {
   color: var(--blue);

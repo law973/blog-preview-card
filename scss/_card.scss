@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin-top: 1rem;
     padding: 24px;
-    width: clamp(20.438rem, 85vw, 24rem);
+    width: clamp(17.5rem, 87vw, 24rem);
+    // width: clamp(20.438rem, 87vw, 24rem);
 }

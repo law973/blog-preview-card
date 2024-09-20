@@ -8,6 +8,7 @@
     background-color: var(--yellow);
     border-radius: 4px;
     font: 800 clamp(0.75rem, 3vw, 0.875rem) $font-stack;
+    line-height: 1.5;
     padding: 4px 12px;
     width: fit-content;
 }
@@ -15,15 +16,18 @@
 .content__description {
     color: var(--gray-500);
     font: 500 clamp(0.875rem, 3.5vw, 1rem) $font-stack;
+    line-height: 1.5;
 }
 
 .content__publish_date {
     font: 500 clamp(0.75rem, 3vw, 0.875rem) $font-stack;
+    line-height: 1.5;
 }
 
 .content__title {
     color: var(--gray-950);
     font: 800 clamp(1.25rem, 5.1vw, 1.5rem) $font-stack;
+    line-height: 1.5;
     text-decoration: none;
 
     &:hover {
