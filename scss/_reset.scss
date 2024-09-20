@@ -6,9 +6,24 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    align-items: center;
+    background-color: var(--yellow);
+    color: var(--gray-950);
+    display: flex;
+    flex-direction: column;
+    font-family: $font-stack;
+    gap: 1.5rem;
+    justify-content: center;
     line-height: 1.5;
+    text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
 }
 
 img, picture, video, canvas, svg {
@@ -22,4 +37,9 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+}
+
+::selection {
+    background: var(--gray-950);
+    color: var(--yellow);
 }

@@ -1,0 +1,14 @@
+.author {
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.author__avatar {
+    height: 32px;
+    width: 32px;
+}
+
+.author__name {
+    font: 800 0.875rem $font-stack;
+}

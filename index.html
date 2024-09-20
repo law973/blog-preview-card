@@ -7,19 +7,29 @@
   <link rel="author" content="Levi Wright" href="https://github.com/law973">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Blog Preview Card</title>
+  <link rel="stylesheet" href="css/compiled_style.css">
 </head>
 <body>
   <main>
-    Learning
-
-    Published 21 Dec 2023
-
-    HTML & CSS foundations
-
-    These languages are the backbone of every website, defining structure, content, and presentation.
-
-    Greg Hooper
+    <!-- Card -->
+    <article class="card">
+      <!-- Blog Image -->
+      <img class="blog_image" src="./assets/images/illustration-article.svg" alt="An image with various shapes, lines, and symbols in yellow, black, and white.">
+      <!-- Content -->
+      <section class="content">
+        <span class="content__category">Learning</span>
+        <span class="content__publish_date">Published 21 Dec 2023</span>
+        <a class="content__title" href="#">HTML & CSS foundations</a>
+        <p class="content__description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </section>
+      <!-- Author -->
+      <section class="author">
+        <img class="author__avatar" src="./assets/images/image-avatar.webp" alt="A profile picture of a man in a blue shirt named Greg Hooper.">
+        <span class="author__name">Greg Hooper</span>
+      </section>
+    </article>
   </main>
+  <!-- Attribution -->
   <footer class="attribution">
     Challenge by <a rel="noreferrer" href="https://www.frontendmentor.io" target="_blank" title="Frontend Mentor Home Page"><span class="sr-only">(Opens in a new tab)</span>Frontend Mentor</a>. 
     Coded by <a rel="noreferrer" href="https://github.com/law973" target="_blank" title="GitHub Profile"><span class="sr-only">(Opens in a new tab)</span>Levi Wright</a>.
