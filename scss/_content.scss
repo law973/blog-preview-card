@@ -5,7 +5,8 @@
 }
 
 .content__category {
-    background-color: var(--yellow);
+    background-color: var(--theme-color);
+    color: var(--category-text-color);
     border-radius: 4px;
     font: 800 clamp(0.75rem, 3vw, 0.875rem) $font-stack;
     line-height: 1.5;
@@ -31,6 +32,6 @@
     text-decoration: none;
 
     &:hover {
-        color: var(--yellow);
+        color: var(--theme-color);
     }
 }

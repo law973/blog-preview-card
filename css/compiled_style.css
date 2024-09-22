@@ -4,11 +4,63 @@
   src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
 }
 :root {
-  --blue: hsl(228, 46%, 31%);
   --gray-500: hsl(0, 0%, 42%);
   --gray-950: hsl(0, 0%, 7%);
   --white: hsl(0, 0%, 100%);
-  --yellow: hsl(47, 88%, 63%);
+  --theme-color: hsl(47, 88%, 63%);
+  --attribution-link-color: hsl(228, 46%, 31%);
+  --attribution-text-color: var(--gray-950);
+  --category-text-color: var(--gray-950);
+  --selection-bg-color: var(--gray-950);
+  --selection-text-color: var(--theme-color);
+}
+
+[data-theme=red] {
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+  --theme-color: #B10B2F;
+  --attribution-link-color: var(--white);
+  --attribution-text-color: var(--white);
+  --category-text-color: var(--white);
+  --selection-bg-color: var(--gray-950);
+  --selection-text-color: #F97793;
+}
+
+[data-theme=yellow] {
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+  --theme-color: hsl(47, 88%, 63%);
+  --attribution-link-color: hsl(228, 46%, 31%);
+  --attribution-text-color: var(--gray-950);
+  --category-text-color: var(--gray-950);
+  --selection-bg-color: var(--gray-950);
+  --selection-text-color: var(--theme-color);
+}
+
+[data-theme=green] {
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+  --theme-color: #72f44e;
+  --attribution-link-color: hsl(228, 46%, 31%);
+  --attribution-text-color: var(--gray-950);
+  --category-text-color: var(--gray-950);
+  --selection-bg-color: var(--gray-950);
+  --selection-text-color: var(--theme-color);
+}
+
+[data-theme=blue] {
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+  --theme-color: #0f3feb;
+  --attribution-link-color: var(--white);
+  --attribution-text-color: var(--white);
+  --category-text-color: var(--white);
+  --selection-bg-color: var(--gray-950);
+  --selection-text-color: #809BF9;
 }
 
 *, *::before, *::after {
@@ -25,7 +77,7 @@ html, body {
 
 body {
   align-items: center;
-  background-color: var(--yellow);
+  background-color: var(--theme-color);
   color: var(--gray-950);
   display: flex;
   flex-direction: column;
@@ -54,8 +106,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-  background: var(--gray-950);
-  color: var(--yellow);
+  background: var(--selection-bg-color);
+  color: var(--selection-text-color);
 }
 
 .sr-only {
@@ -99,7 +151,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .content__category {
-  background-color: var(--yellow);
+  background-color: var(--theme-color);
+  color: var(--category-text-color);
   border-radius: 4px;
   font: 800 clamp(0.75rem, 3vw, 0.875rem) "Figtree", sans-serif;
   line-height: 1.5;
@@ -125,7 +178,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .content__title:hover {
-  color: var(--yellow);
+  color: var(--theme-color);
 }
 
 .author {
@@ -144,12 +197,26 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 
+.button {
+  background-color: var(--white);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0.313rem var(--gray-950);
+  cursor: pointer;
+  padding: 7px;
+}
+.button:active {
+  box-shadow: none;
+  transform: translateY(0.313rem);
+}
+
 .attribution {
+  color: var(--attribution-text-color);
   font: 500 clamp(0.688rem, 2.7vw, 0.875rem) "Figtree", sans-serif;
   margin-bottom: 1rem;
 }
 .attribution a {
-  color: var(--blue);
+  color: var(--attribution-link-color);
 }
 .attribution a:hover {
   color: var(--gray-950);

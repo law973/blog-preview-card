@@ -1,9 +1,10 @@
 .attribution { 
+    color: var(--attribution-text-color);
     font: 500 clamp(0.688rem, 2.7vw, 0.875rem) $font-stack;
     margin-bottom: 1rem;
 
     a {
-        color: var(--blue);
+        color: var(--attribution-link-color);
 
         &:hover {
             color: var(--gray-950);
