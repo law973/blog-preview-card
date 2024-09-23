@@ -1,16 +1,22 @@
 // Variables for font and colors
 $font-stack: 'Figtree', sans-serif;
 
-// Default/fallback colors
+// Fallback colors
 :root {
     --gray-500: hsl(0, 0%, 42%);
     --gray-950: hsl(0, 0%, 7%);
+    --red: #B10B2F;
     --white: hsl(0, 0%, 100%);
 
     --theme-color: hsl(47, 88%, 63%);
 
     --attribution-link-color: hsl(228, 46%, 31%);
     --attribution-text-color: var(--gray-950);
+
+    --button-red-bg-color-hover: #B10B2F;
+    --button-yellow-bg-color-hover: var(--white);
+    --button-green-bg-color-hover: #72f44e;
+    --button-blue-bg-color-hover: #0f3feb;
 
     --category-text-color: var(--gray-950);
 
@@ -19,14 +25,15 @@ $font-stack: 'Figtree', sans-serif;
 }
 
 [data-theme='red'] {
-    --gray-500: hsl(0, 0%, 42%);
-    --gray-950: hsl(0, 0%, 7%);
-    --white: hsl(0, 0%, 100%);
-
-    --theme-color: #B10B2F;
+    --theme-color: var(--red);
 
     --attribution-link-color: var(--white);
     --attribution-text-color: var(--white);
+
+    --button-red-bg-color-hover: var(--white);
+    --button-yellow-bg-color-hover: hsl(47, 88%, 63%);
+    --button-green-bg-color-hover: #72f44e;
+    --button-blue-bg-color-hover: #0f3feb;
 
     --category-text-color: var(--white);
 
@@ -35,14 +42,15 @@ $font-stack: 'Figtree', sans-serif;
 }
 
 [data-theme='yellow'] {
-    --gray-500: hsl(0, 0%, 42%);
-    --gray-950: hsl(0, 0%, 7%);
-    --white: hsl(0, 0%, 100%);
-
     --theme-color: hsl(47, 88%, 63%);
 
     --attribution-link-color: hsl(228, 46%, 31%);
     --attribution-text-color: var(--gray-950);
+
+    --button-red-bg-color-hover: #B10B2F;
+    --button-yellow-bg-color-hover: var(--white);
+    --button-green-bg-color-hover: #72f44e;
+    --button-blue-bg-color-hover: #0f3feb;
 
     --category-text-color: var(--gray-950);
 
@@ -51,14 +59,15 @@ $font-stack: 'Figtree', sans-serif;
 }
 
 [data-theme='green'] {
-    --gray-500: hsl(0, 0%, 42%);
-    --gray-950: hsl(0, 0%, 7%);
-    --white: hsl(0, 0%, 100%);
-
     --theme-color: #72f44e;
 
     --attribution-link-color: hsl(228, 46%, 31%);
     --attribution-text-color: var(--gray-950);
+
+    --button-red-bg-color-hover: #B10B2F;
+    --button-yellow-bg-color-hover: hsl(47, 88%, 63%);
+    --button-green-bg-color-hover: var(--white);
+    --button-blue-bg-color-hover: #0f3feb;
 
     --category-text-color: var(--gray-950);
 
@@ -67,14 +76,15 @@ $font-stack: 'Figtree', sans-serif;
 }
 
 [data-theme='blue'] {
-    --gray-500: hsl(0, 0%, 42%);
-    --gray-950: hsl(0, 0%, 7%);
-    --white: hsl(0, 0%, 100%);
-
     --theme-color: #0f3feb;
 
     --attribution-link-color: var(--white);
     --attribution-text-color: var(--white);
+
+    --button-red-bg-color-hover: #B10B2F;
+    --button-yellow-bg-color-hover: hsl(47, 88%, 63%);
+    --button-green-bg-color-hover: #72f44e;
+    --button-blue-bg-color-hover: var(--white);
 
     --category-text-color: var(--white);
 

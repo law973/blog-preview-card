@@ -6,13 +6,34 @@
     cursor: pointer;
     padding: 7px;
 
-    // &:hover, &:active {
-    //     background-color: var(--green);
-    //     color: var(--grey-900);
-    // }
-
     &:active {
         box-shadow: none;
         transform: translateY(0.313rem);
+    }
+}
+
+#theme-switcher-red {
+    &:hover:not([disabled]) {
+        background-color: var(--button-red-bg-color-hover);
+        color: var(--white);
+    }
+}
+
+#theme-switcher-yellow {
+    &:hover:not([disabled]) {
+        background-color: var(--button-yellow-bg-color-hover);
+    }
+}
+
+#theme-switcher-green {
+    &:hover:not([disabled]) {
+        background-color: var(--button-green-bg-color-hover);
+    }
+}
+
+#theme-switcher-blue {
+    &:hover:not([disabled]) {
+        background-color: var(--button-blue-bg-color-hover);
+        color: var(--white);
     }
 }
