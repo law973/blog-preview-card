@@ -1,25 +1,24 @@
 // Variables for font and colors
 $font-stack: 'Figtree', sans-serif;
 
-// Fallback colors
 :root {
+    // Universal colors
+    --blue: hsl(227, 88%, 49%);
+    --dark-blue: hsl(228, 46%, 31%);
     --gray-500: hsl(0, 0%, 42%);
     --gray-950: hsl(0, 0%, 7%);
-    --red: #B10B2F;
+    --green: hsl(107, 88%, 63%);
+    --light-blue: hsl(227, 91%, 74%);
+    --light-red: hsl(347, 92%, 72%);
+    --red: hsl(347, 88%, 37%);
     --white: hsl(0, 0%, 100%);
+    --yellow: hsl(47, 88%, 63%);
 
-    --theme-color: hsl(47, 88%, 63%);
-
-    --attribution-link-color: hsl(228, 46%, 31%);
+    // Fallback colors
+    --theme-color: var(--yellow);
+    --attribution-link-color: var(--dark-blue);
     --attribution-text-color: var(--gray-950);
-
-    --button-red-bg-color-hover: #B10B2F;
-    --button-yellow-bg-color-hover: var(--white);
-    --button-green-bg-color-hover: #72f44e;
-    --button-blue-bg-color-hover: #0f3feb;
-
     --category-text-color: var(--gray-950);
-
     --selection-bg-color: var(--gray-950);
     --selection-text-color: var(--theme-color);
 }
@@ -29,65 +28,37 @@ $font-stack: 'Figtree', sans-serif;
 
     --attribution-link-color: var(--white);
     --attribution-text-color: var(--white);
-
-    --button-red-bg-color-hover: var(--white);
-    --button-yellow-bg-color-hover: hsl(47, 88%, 63%);
-    --button-green-bg-color-hover: #72f44e;
-    --button-blue-bg-color-hover: #0f3feb;
-
     --category-text-color: var(--white);
-
     --selection-bg-color: var(--gray-950);
-    --selection-text-color: #F97793;
+    --selection-text-color: var(--light-red);
 }
 
 [data-theme='yellow'] {
-    --theme-color: hsl(47, 88%, 63%);
+    --theme-color: var(--yellow);
 
-    --attribution-link-color: hsl(228, 46%, 31%);
+    --attribution-link-color: var(--dark-blue);
     --attribution-text-color: var(--gray-950);
-
-    --button-red-bg-color-hover: #B10B2F;
-    --button-yellow-bg-color-hover: var(--white);
-    --button-green-bg-color-hover: #72f44e;
-    --button-blue-bg-color-hover: #0f3feb;
-
     --category-text-color: var(--gray-950);
-
     --selection-bg-color: var(--gray-950);
     --selection-text-color: var(--theme-color);
 }
 
 [data-theme='green'] {
-    --theme-color: #72f44e;
+    --theme-color: var(--green);
 
-    --attribution-link-color: hsl(228, 46%, 31%);
+    --attribution-link-color: var(--dark-blue);
     --attribution-text-color: var(--gray-950);
-
-    --button-red-bg-color-hover: #B10B2F;
-    --button-yellow-bg-color-hover: hsl(47, 88%, 63%);
-    --button-green-bg-color-hover: var(--white);
-    --button-blue-bg-color-hover: #0f3feb;
-
     --category-text-color: var(--gray-950);
-
     --selection-bg-color: var(--gray-950);
     --selection-text-color: var(--theme-color);
 }
 
 [data-theme='blue'] {
-    --theme-color: #0f3feb;
+    --theme-color: var(--blue);
 
     --attribution-link-color: var(--white);
     --attribution-text-color: var(--white);
-
-    --button-red-bg-color-hover: #B10B2F;
-    --button-yellow-bg-color-hover: hsl(47, 88%, 63%);
-    --button-green-bg-color-hover: #72f44e;
-    --button-blue-bg-color-hover: var(--white);
-
     --category-text-color: var(--white);
-
     --selection-bg-color: var(--gray-950);
-    --selection-text-color: #809BF9;
+    --selection-text-color: var(--light-blue);
 }
