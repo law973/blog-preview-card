@@ -37,6 +37,8 @@ Users should be able to:
 
 - Semantic HTML
 - CSS variables
+- CSS Flexbox
+- CSS Grid
 - SCSS
 - JavaScript
 - Mobile-first workflow

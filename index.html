@@ -13,13 +13,15 @@
   <main>
     <!-- Card -->
     <article class="card">
-      <!-- Blog Image -->
-      <img id="blog-image" class="blog_image" src="./assets/images/illustration-article-yellow.svg" alt="An image with various shapes, lines, and symbols in yellow, black, and white.">
+      <!-- Blog Images -->
+      <div>
+        <img id="blog-image" class="blog_image" src="./assets/images/illustration-article-yellow.svg" role="image" alt="An image with various shapes, lines, and symbols in yellow, black, and white.">
+      </div>
       <!-- Content -->
       <section class="content">
         <span class="content__category">Learning</span>
         <span class="content__publish_date">Published 21 Dec 2023</span>
-        <a class="content__title" href="#">HTML & CSS foundations</a>
+        <a class="content__title" href="#" title="Click to read more">HTML & CSS foundations</a>
         <p class="content__description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
       </section>
       <!-- Author -->
@@ -28,14 +30,14 @@
         <span class="author__name">Greg Hooper</span>
       </section>
     </article>
+    <!-- Color Variant Switch Buttons -->
+    <div class="buttons_container">
+      <button id="theme-switcher-red" class="button">Switch to Red Theme</button>
+      <button id="theme-switcher-yellow" class="button">Switch to Yellow Theme</button>
+      <button id="theme-switcher-green" class="button">Switch to Green Theme</button>
+      <button id="theme-switcher-blue" class="button">Switch to Blue Theme</button>
+    </div>
   </main>
-  <!-- Color Variant Switch Buttons -->
-  <div>
-    <button id="theme-switcher-red" class="button">Switch to Red Theme</button>
-    <button id="theme-switcher-yellow" class="button">Switch to Yellow Theme</button>
-    <button id="theme-switcher-green" class="button">Switch to Green Theme</button>
-    <button id="theme-switcher-blue" class="button">Switch to Blue Theme</button>
-  </div>
   <!-- Attribution -->
   <footer class="attribution">
     Challenge by <a rel="noreferrer" href="https://www.frontendmentor.io" target="_blank" title="Frontend Mentor Home Page"><span class="sr-only">(Opens in a new tab)</span>Frontend Mentor</a>. 

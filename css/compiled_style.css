@@ -66,7 +66,7 @@
   margin: 0;
 }
 
-html, body {
+html {
   height: 100%;
 }
 
@@ -80,7 +80,7 @@ body {
   gap: 1.5rem;
   justify-content: center;
   line-height: 1.5;
-  min-height: fit-content;
+  min-height: 100%;
   text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -90,6 +90,12 @@ body {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 input, button, textarea, select {
@@ -198,11 +204,23 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   box-shadow: 0 0.313rem var(--gray-950);
   cursor: pointer;
-  padding: 7px;
+  font-size: clamp(0.875rem, 3.5vw, 1rem);
+  font-weight: 500;
+  padding: 9px;
+}
+.button:hover:not([disabled]), .button:active {
+  font-weight: 800;
 }
 .button:active {
   box-shadow: none;
   transform: translateY(0.313rem);
+}
+
+.buttons_container {
+  display: grid;
+  gap: 1rem;
+  grid: auto/repeat(2, 1fr);
+  width: clamp(18rem, 89vw, 24.5rem);
 }
 
 #theme-switcher-red:hover:not([disabled]) {

@@ -4,12 +4,25 @@
     border-radius: 5px;
     box-shadow: 0 0.313rem var(--gray-950);
     cursor: pointer;
-    padding: 7px;
+    font-size: clamp(0.875rem, 3.5vw, 1rem);
+    font-weight: 500;
+    padding: 9px;
+
+    &:hover:not([disabled]), &:active {
+        font-weight: 800;
+    }
 
     &:active {
         box-shadow: none;
         transform: translateY(0.313rem);
     }
+}
+
+.buttons_container {
+    display: grid;
+    gap: 1rem;
+    grid: auto / repeat(2, 1fr);
+    width: clamp(18rem, 89vw, 24.5rem);
 }
 
 #theme-switcher-red {
