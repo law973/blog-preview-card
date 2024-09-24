@@ -22,7 +22,9 @@
     display: grid;
     gap: 1rem;
     grid: auto / repeat(2, 1fr);
-    width: clamp(18rem, 89vw, 24.5rem);
+    left: 0.25rem;
+    position: relative;
+    width: clamp(17.5rem, 87.2vw, 24rem);
 }
 
 #theme-switcher-red {

@@ -11,6 +11,7 @@
     font: 800 clamp(0.75rem, 3vw, 0.875rem) $font-stack;
     line-height: 1.5;
     padding: 3px 12px;
+    transition: background-color 0.5s linear, color 0.5s linear;
     width: fit-content;
 }
 

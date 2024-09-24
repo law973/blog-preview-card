@@ -2,5 +2,22 @@
     border-radius: 10px;
     height: 12.5rem;
     object-fit: cover;
+    opacity: 1;
+    position: relative;
+    transition: opacity 0.5s linear;
     width: 100%;
+
+    @for $i from 1 through 3 {
+        &:nth-child(#{1 + $i}) {
+            top: -100% * $i;
+        }
+    }
+
+    &.hidden {
+        opacity: 0;   
+    }
+}
+
+.blog_images_container {
+    height: 12.5rem;
 }

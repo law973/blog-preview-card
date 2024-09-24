@@ -1,44 +1,37 @@
-const redThemeSwitcher = document.getElementById("theme-switcher-red");
-const yellowThemeSwitcher = document.getElementById("theme-switcher-yellow");
-const greenThemeSwitcher = document.getElementById("theme-switcher-green");
-const blueThemeSwitcher = document.getElementById("theme-switcher-blue");
+const redThemeSwitcher = document.getElementById('theme-switcher-red');
+const yellowThemeSwitcher = document.getElementById('theme-switcher-yellow');
+const greenThemeSwitcher = document.getElementById('theme-switcher-green');
+const blueThemeSwitcher = document.getElementById('theme-switcher-blue');
 
-const switchBlogImageSource = themeColor => {
-    const blogImage = document.getElementById('blog-image');
-    const newSource = `./assets/images/illustration-article-${themeColor}.svg`;
-    blogImage.src = newSource;
-};
+const hidePreviousBlogImage = () => {
+    blogImages = document.querySelectorAll('.blog_image');
+    blogImages.forEach( blogImage => { blogImage.classList.add('hidden'); } );
+}
+
+const showNewBlogImage = themeColor => {
+    const newBlogImage = document.getElementById(`blog-image-${themeColor}`);
+    newBlogImage.classList.remove('hidden');
+}
 
 const switchDataTheme = themeColor => {
     document.documentElement.setAttribute('data-theme', themeColor);
 };
 
 const enableThemeSwitchers = () => {
-    document.querySelectorAll('button').forEach( button => { button.disabled = false; });
+    document.querySelectorAll('button').forEach( button => { button.disabled = false; } );
 };
 
-const disableCurrentThemeSwitcher = themeColor => {
-    switch (themeColor) {
-        case 'red':
-            redThemeSwitcher.disabled = true;
-            break;
-        case 'yellow':
-            yellowThemeSwitcher.disabled = true;
-            break;
-        case 'green':
-            greenThemeSwitcher.disabled = true;
-            break;
-        case 'blue':
-            blueThemeSwitcher.disabled = true;
-            break;
-    };
+const disableNewThemeSwitcher = themeColor => {
+    const newThemeSwitcher = document.getElementById(`theme-switcher-${themeColor}`);
+    newThemeSwitcher.disabled = true;
 };
 
 const switchToNewTheme = themeColor => {
-    switchBlogImageSource(themeColor);
+    hidePreviousBlogImage();
+    showNewBlogImage(themeColor);
     switchDataTheme(themeColor);
     enableThemeSwitchers();
-    disableCurrentThemeSwitcher(themeColor);
+    disableNewThemeSwitcher(themeColor);
 };
 
 // Event listeners
