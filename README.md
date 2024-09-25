@@ -70,7 +70,7 @@ I also got more practice with mixins and learned more about the ways that variab
 
 ### Continued Development
 
-I want to continue refining my skills in, and expanding my knowledge of, JavaScript. I also want to become better with styling images, styling svgs, and taking accessiblity into account.
+I want to continue refining my skills in, and expanding my knowledge of, JavaScript. I also want to become better with styling images, styling svgs, and taking accessibility into account.
 
 ## Author
 
