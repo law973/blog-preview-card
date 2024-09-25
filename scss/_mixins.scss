@@ -14,7 +14,7 @@
 
 @mixin selected-button-colors($bg-c, $c: "gray-950") {
     #theme_switcher_#{$bg-c} {
-        &:hover:not([disabled]), &:active {
+        &:hover:not([disabled]), &:active, &:focus {
             background-color: var(--#{$bg-c});
             color: var(--#{$c});
         }

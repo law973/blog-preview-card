@@ -8,8 +8,9 @@
     a {
         color: var(--attribution-link-color);
 
-        &:hover {
-            color: var(--gray-950);
+        &:hover, &:focus {
+            color: var(--attribution-link-hover-color);
+            text-decoration: none;
         }
 
         &:not(:hover) {

@@ -7,7 +7,7 @@
     cursor: pointer;
     padding: 9px;
 
-    &:hover:not([disabled]), &:active {
+    &:hover:not([disabled]), &:active, &:focus {
         font-weight: 800;
     }
 

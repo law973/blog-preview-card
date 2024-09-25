@@ -14,48 +14,53 @@
   --red: hsl(347, 88%, 37%);
   --white: hsl(0, 0%, 100%);
   --yellow: hsl(47, 88%, 63%);
-  --theme-color: var(--yellow);
   --attribution-link-color: var(--dark-blue);
+  --attribution-link-hover-color: var(--gray-950);
   --attribution-text-color: var(--gray-950);
   --category-text-color: var(--gray-950);
   --selection-bg-color: var(--gray-950);
   --selection-text-color: var(--theme-color);
+  --theme-color: var(--yellow);
 }
 
 [data-theme=red] {
-  --theme-color: var(--red);
   --attribution-link-color: var(--white);
+  --attribution-link-hover-color: var(--attribution-link-color);
   --attribution-text-color: var(--white);
   --category-text-color: var(--white);
   --selection-bg-color: var(--gray-950);
   --selection-text-color: var(--light-red);
+  --theme-color: var(--red);
 }
 
 [data-theme=yellow] {
-  --theme-color: var(--yellow);
   --attribution-link-color: var(--dark-blue);
+  --attribution-link-hover-color: var(--gray-950);
   --attribution-text-color: var(--gray-950);
   --category-text-color: var(--gray-950);
   --selection-bg-color: var(--gray-950);
   --selection-text-color: var(--theme-color);
+  --theme-color: var(--yellow);
 }
 
 [data-theme=green] {
-  --theme-color: var(--green);
   --attribution-link-color: var(--dark-blue);
+  --attribution-link-hover-color: var(--gray-950);
   --attribution-text-color: var(--gray-950);
   --category-text-color: var(--gray-950);
   --selection-bg-color: var(--gray-950);
   --selection-text-color: var(--theme-color);
+  --theme-color: var(--green);
 }
 
 [data-theme=blue] {
-  --theme-color: var(--blue);
   --attribution-link-color: var(--white);
+  --attribution-link-hover-color: var(--attribution-link-color);
   --attribution-text-color: var(--white);
   --category-text-color: var(--white);
   --selection-bg-color: var(--gray-950);
   --selection-text-color: var(--light-blue);
+  --theme-color: var(--blue);
 }
 
 .centered-to-card, .attribution, .buttons_container {
@@ -203,7 +208,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: var(--gray-950);
   text-decoration: none;
 }
-.content__title:hover {
+.content__title:hover, .content__title:focus {
   color: var(--theme-color);
 }
 
@@ -232,7 +237,7 @@ p, h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 9px;
 }
-.button:hover:not([disabled]), .button:active {
+.button:hover:not([disabled]), .button:active, .button:focus {
   font-weight: 800;
 }
 .button:active {
@@ -246,22 +251,22 @@ p, h1, h2, h3, h4, h5, h6 {
   grid: auto/repeat(2, 1fr);
 }
 
-#theme_switcher_red:hover:not([disabled]), #theme_switcher_red:active {
+#theme_switcher_red:hover:not([disabled]), #theme_switcher_red:active, #theme_switcher_red:focus {
   background-color: var(--red);
   color: var(--white);
 }
 
-#theme_switcher_yellow:hover:not([disabled]), #theme_switcher_yellow:active {
+#theme_switcher_yellow:hover:not([disabled]), #theme_switcher_yellow:active, #theme_switcher_yellow:focus {
   background-color: var(--yellow);
   color: var(--gray-950);
 }
 
-#theme_switcher_green:hover:not([disabled]), #theme_switcher_green:active {
+#theme_switcher_green:hover:not([disabled]), #theme_switcher_green:active, #theme_switcher_green:focus {
   background-color: var(--green);
   color: var(--gray-950);
 }
 
-#theme_switcher_blue:hover:not([disabled]), #theme_switcher_blue:active {
+#theme_switcher_blue:hover:not([disabled]), #theme_switcher_blue:active, #theme_switcher_blue:focus {
   background-color: var(--blue);
   color: var(--white);
 }
@@ -275,8 +280,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .attribution a {
   color: var(--attribution-link-color);
 }
-.attribution a:hover {
-  color: var(--gray-950);
+.attribution a:hover, .attribution a:focus {
+  color: var(--attribution-link-hover-color);
+  text-decoration: none;
 }
 .attribution a:not(:hover) {
   transition: color 0.5s linear;

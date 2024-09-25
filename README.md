@@ -24,7 +24,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot/screenshot.png)
+![](./screenshot/screenshot_red.png)
+![](./screenshot/screenshot_green.png)
+![](./screenshot/screenshot_blue.png)
 
 ### Links
 
@@ -40,7 +43,7 @@ Users should be able to:
 - CSS Grid
 - SCSS
 - CSS/SCSS variables
-- SCSS mixins and extends
+- SCSS extends and mixins
 - JavaScript
 - Mobile-first workflow
 

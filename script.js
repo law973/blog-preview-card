@@ -9,7 +9,7 @@ const hidePreviousBlogImage = () => {
 }
 
 const showNewBlogImage = themeColor => {
-    const newBlogImage = document.getElementById(`blog-image-${themeColor}`);
+    const newBlogImage = document.getElementById(`blog_image_${themeColor}`);
     newBlogImage.classList.remove('hidden');
 }
 
