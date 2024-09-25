@@ -49,27 +49,28 @@ Users should be able to:
 
 ### What I Learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I became more familiar with the font shorthand during this challenge and found that line-height can be added to it, separated from the font-size with a slash:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+font: 500 initial/1.5 $font-stack;
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+I also got more practice with mixins and learned more about the ways that variables can be plugged into styling, with this usage of string interpolation being a prime example:
+
+```css
+@mixin selected-button-colors($bg-c, $c: "gray-950") {
+    #theme_switcher_#{$bg-c} {
+        &:hover:not([disabled]), &:active, &:focus {
+            background-color: var(--#{$bg-c});
+            color: var(--#{$c});
+        }
+    }
 }
 ```
 
 ### Continued Development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to continue refining my skills in, and expanding my knowledge of, JavaScript. I also want to become better with styling images, styling svgs, and taking accessiblity into account.
 
 ## Author
 

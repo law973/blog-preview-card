@@ -16,9 +16,8 @@ body {
     align-items: center;
     background-color: var(--theme-color);
     color: var(--gray-950);
-    font-family: $font-stack;
+    font: 500 initial/1.5 $font-stack;
     justify-content: center;
-    line-height: 1.5;
     min-height: 100%;
     text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;

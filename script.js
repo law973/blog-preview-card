@@ -3,8 +3,8 @@ const yellowThemeSwitcher = document.getElementById('theme_switcher_yellow');
 const greenThemeSwitcher = document.getElementById('theme_switcher_green');
 const blueThemeSwitcher = document.getElementById('theme_switcher_blue');
 
-const hidePreviousBlogImage = () => {
-    blogImages = document.querySelectorAll('.blog_image');
+const hideBlogImages = () => {
+    const blogImages = document.querySelectorAll('.blog_image');
     blogImages.forEach( blogImage => { blogImage.classList.add('hidden'); } );
 }
 
@@ -18,7 +18,8 @@ const switchDataTheme = themeColor => {
 };
 
 const enableThemeSwitchers = () => {
-    document.querySelectorAll('button').forEach( button => { button.disabled = false; } );
+    const themeSwitchers = document.querySelectorAll('button');
+    themeSwitchers.forEach( themeSwitcher => { themeSwitcher.disabled = false; } );
 };
 
 const disableNewThemeSwitcher = themeColor => {
@@ -28,11 +29,11 @@ const disableNewThemeSwitcher = themeColor => {
 
 const switchToNewTheme = themeColor => {
     // Blog images disappear and appear practically simultaneously, allowing for a fairly smooth transition
-    hidePreviousBlogImage();
+    hideBlogImages();
     showNewBlogImage(themeColor);
     // The rest of the page color changes are handled here
     switchDataTheme(themeColor);
-    // All buttons are enabled, and then the appropriate switch is disabled
+    // All theme switchers are enabled, and then the appropriate switch is disabled
     enableThemeSwitchers();
     disableNewThemeSwitcher(themeColor);
 };

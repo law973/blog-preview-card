@@ -92,9 +92,8 @@ body {
   align-items: center;
   background-color: var(--theme-color);
   color: var(--gray-950);
-  font-family: "Figtree", sans-serif;
+  font: 500 initial/1.5 "Figtree", sans-serif;
   justify-content: center;
-  line-height: 1.5;
   min-height: 100%;
   text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -188,8 +187,8 @@ p, h1, h2, h3, h4, h5, h6 {
   font: 800 clamp(0.75rem, 3vw, 0.875rem)/1.5 "Figtree", sans-serif;
   transition: background-color 0.5s linear, color 0.5s linear;
   background-color: var(--theme-color);
-  color: var(--category-text-color);
   border-radius: 4px;
+  color: var(--category-text-color);
   padding: 3px 12px;
   width: fit-content;
 }
@@ -224,8 +223,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .author__name {
-  font: 800 0.875rem "Figtree", sans-serif;
-  line-height: 1.5;
+  font: 800 0.875rem/1.5 "Figtree", sans-serif;
 }
 
 .button {

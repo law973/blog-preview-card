@@ -6,8 +6,8 @@
     @include responsive-font-heavy(0.75rem, 3vw, 0.875rem);
     @include transition-double("background-color", "color");
     background-color: var(--theme-color);
-    color: var(--category-text-color);
     border-radius: 4px;
+    color: var(--category-text-color);
     padding: 3px 12px;
     width: fit-content;
 }
