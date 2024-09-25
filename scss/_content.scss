@@ -1,7 +1,5 @@
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    @include flex-column(0.75rem);
 }
 
 .content__category {

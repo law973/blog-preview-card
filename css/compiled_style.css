@@ -71,13 +71,13 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   align-items: center;
   background-color: var(--theme-color);
   color: var(--gray-950);
-  display: flex;
-  flex-direction: column;
   font-family: "Figtree", sans-serif;
-  gap: 1.5rem;
   justify-content: center;
   line-height: 1.5;
   min-height: 100%;
@@ -96,6 +96,7 @@ img, picture, video, canvas, svg {
 main {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
   gap: 1.5rem;
 }
 
@@ -127,12 +128,13 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   background-color: var(--white);
   border: 1px solid var(--gray-950);
   border-radius: 20px;
   box-shadow: 8px 8px var(--gray-950);
-  display: flex;
-  flex-direction: column;
   gap: 1.5rem;
   margin-top: 1rem;
   padding: 24px;
@@ -141,7 +143,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .blog_image {
   border-radius: 10px;
-  height: 12.5rem;
+  height: 100%;
   object-fit: cover;
   opacity: 1;
   position: relative;
