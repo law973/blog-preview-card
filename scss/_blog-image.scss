@@ -1,10 +1,10 @@
 .blog_image {
+    @include transition-single("opacity");
     border-radius: 10px;
     height: 100%;
     object-fit: cover;
     opacity: 1;
     position: relative;
-    transition: opacity 0.5s linear;
     width: 100%;
 
     @for $i from 1 through 3 {

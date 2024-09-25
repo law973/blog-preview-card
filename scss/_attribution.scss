@@ -1,9 +1,9 @@
 .attribution { 
     @extend .centered-to-card;
+    @include responsive-font-light(0.688rem, 2.7vw, 0.875rem);
+    @include transition-single("color");
     color: var(--attribution-text-color);
-    font: 500 clamp(0.688rem, 2.7vw, 0.875rem) $font-stack;
     margin-bottom: 1rem;
-    transition: color 0.5s linear;
 
     a {
         color: var(--attribution-link-color);
@@ -13,7 +13,7 @@
         }
 
         &:not(:hover) {
-            transition: color 0.5s linear;
+            @include transition-single("color");
         }
     }
 }

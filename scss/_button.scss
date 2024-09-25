@@ -1,10 +1,10 @@
 .button {
+    @include responsive-font-light(0.875rem, 3.5vw, 1rem);
     background-color: var(--white);
     border: none;
     border-radius: 5px;
     box-shadow: 0 0.313rem var(--gray-950);
     cursor: pointer;
-    font: 500 clamp(0.875rem, 3.5vw, 1rem)/1.5 $font-stack;
     padding: 9px;
 
     &:hover:not([disabled]), &:active {

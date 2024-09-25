@@ -4,6 +4,14 @@
     gap: $g;
 }
 
+@mixin responsive-font-heavy($min-size, $size, $max-size) {
+    font: 800 clamp($min-size, $size, $max-size)/1.5 $font-stack;
+}
+
+@mixin responsive-font-light($min-size, $size, $max-size) {
+    font: 500 clamp($min-size, $size, $max-size)/1.5 $font-stack;
+}
+
 @mixin selected-button-colors($bg-c, $c: "gray-950") {
     #theme_switcher_#{$bg-c} {
         &:hover:not([disabled]), &:active {
@@ -11,4 +19,12 @@
             color: var(--#{$c});
         }
     }
+}
+
+@mixin transition-double($property-one, $property-two) {
+    transition: #{$property-one} 0.5s linear, #{$property-two} 0.5s linear;
+}
+
+@mixin transition-single($property) {
+    transition: #{$property} 0.5s linear;
 }

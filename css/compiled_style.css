@@ -83,6 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  transition: background-color 0.5s linear;
   align-items: center;
   background-color: var(--theme-color);
   color: var(--gray-950);
@@ -91,7 +92,6 @@ body {
   line-height: 1.5;
   min-height: 100%;
   text-size-adjust: 100%;
-  transition: background-color 0.5s linear;
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -148,12 +148,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .blog_image {
+  transition: opacity 0.5s linear;
   border-radius: 10px;
   height: 100%;
   object-fit: cover;
   opacity: 1;
   position: relative;
-  transition: opacity 0.5s linear;
   width: 100%;
 }
 .blog_image:nth-child(2) {
@@ -180,18 +180,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .content__category {
+  font: 800 clamp(0.75rem, 3vw, 0.875rem)/1.5 "Figtree", sans-serif;
+  transition: background-color 0.5s linear, color 0.5s linear;
   background-color: var(--theme-color);
   color: var(--category-text-color);
   border-radius: 4px;
-  font: 800 clamp(0.75rem, 3vw, 0.875rem)/1.5 "Figtree", sans-serif;
   padding: 3px 12px;
-  transition: background-color 0.5s linear, color 0.5s linear;
   width: fit-content;
 }
 
 .content__description {
-  color: var(--gray-500);
   font: 500 clamp(0.875rem, 3.5vw, 1rem)/1.5 "Figtree", sans-serif;
+  color: var(--gray-500);
 }
 
 .content__publish_date {
@@ -199,8 +199,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .content__title {
-  color: var(--gray-950);
   font: 800 clamp(1.25rem, 5.1vw, 1.5rem)/1.5 "Figtree", sans-serif;
+  color: var(--gray-950);
   text-decoration: none;
 }
 .content__title:hover {
@@ -224,12 +224,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .button {
+  font: 500 clamp(0.875rem, 3.5vw, 1rem)/1.5 "Figtree", sans-serif;
   background-color: var(--white);
   border: none;
   border-radius: 5px;
   box-shadow: 0 0.313rem var(--gray-950);
   cursor: pointer;
-  font: 500 clamp(0.875rem, 3.5vw, 1rem)/1.5 "Figtree", sans-serif;
   padding: 9px;
 }
 .button:hover:not([disabled]), .button:active {
@@ -267,10 +267,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .attribution {
-  color: var(--attribution-text-color);
-  font: 500 clamp(0.688rem, 2.7vw, 0.875rem) "Figtree", sans-serif;
-  margin-bottom: 1rem;
+  font: 500 clamp(0.688rem, 2.7vw, 0.875rem)/1.5 "Figtree", sans-serif;
   transition: color 0.5s linear;
+  color: var(--attribution-text-color);
+  margin-bottom: 1rem;
 }
 .attribution a {
   color: var(--attribution-link-color);
