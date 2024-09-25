@@ -6,8 +6,7 @@
     background-color: var(--theme-color);
     color: var(--category-text-color);
     border-radius: 4px;
-    font: 800 clamp(0.75rem, 3vw, 0.875rem) $font-stack;
-    line-height: 1.5;
+    font: 800 clamp(0.75rem, 3vw, 0.875rem)/1.5 $font-stack;
     padding: 3px 12px;
     transition: background-color 0.5s linear, color 0.5s linear;
     width: fit-content;
@@ -15,19 +14,16 @@
 
 .content__description {
     color: var(--gray-500);
-    font: 500 clamp(0.875rem, 3.5vw, 1rem) $font-stack;
-    line-height: 1.5;
+    font: 500 clamp(0.875rem, 3.5vw, 1rem)/1.5 $font-stack;
 }
 
 .content__publish_date {
-    font: 500 clamp(0.75rem, 3vw, 0.875rem) $font-stack;
-    line-height: 1.5;
+    font: 500 clamp(0.75rem, 3vw, 0.875rem)/1.5 $font-stack;
 }
 
 .content__title {
     color: var(--gray-950);
-    font: 800 clamp(1.25rem, 5.1vw, 1.5rem) $font-stack;
-    line-height: 1.5;
+    font: 800 clamp(1.25rem, 5.1vw, 1.5rem)/1.5 $font-stack;
     text-decoration: none;
 
     &:hover {

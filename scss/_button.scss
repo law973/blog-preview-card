@@ -4,8 +4,7 @@
     border-radius: 5px;
     box-shadow: 0 0.313rem var(--gray-950);
     cursor: pointer;
-    font-size: clamp(0.875rem, 3.5vw, 1rem);
-    font-weight: 500;
+    font: 500 clamp(0.875rem, 3.5vw, 1rem)/1.5 $font-stack;
     padding: 9px;
 
     &:hover:not([disabled]), &:active {
@@ -19,36 +18,14 @@
 }
 
 .buttons_container {
+    @extend .centered-to-card;
+    @extend .card-and-buttons-container-width;
     display: grid;
     gap: 1rem;
     grid: auto / repeat(2, 1fr);
-    left: 0.25rem;
-    position: relative;
-    width: clamp(17.5rem, 87.2vw, 24rem);
 }
 
-#theme-switcher-red {
-    &:hover:not([disabled]) {
-        background-color: var(--red);
-        color: var(--white);
-    }
-}
-
-#theme-switcher-yellow {
-    &:hover:not([disabled]) {
-        background-color: var(--yellow);
-    }
-}
-
-#theme-switcher-green {
-    &:hover:not([disabled]) {
-        background-color: var(--green);
-    }
-}
-
-#theme-switcher-blue {
-    &:hover:not([disabled]) {
-        background-color: var(--blue);
-        color: var(--white);
-    }
-}
+@include selected-button-colors("red", "white");
+@include selected-button-colors("yellow");
+@include selected-button-colors("green");
+@include selected-button-colors("blue", "white");

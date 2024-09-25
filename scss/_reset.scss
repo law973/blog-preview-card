@@ -33,7 +33,6 @@ img, picture, video, canvas, svg {
 
 main {
     @include flex-column;
-    gap: 1.5rem;
 }
 
 input, button, textarea, select {

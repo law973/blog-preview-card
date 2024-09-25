@@ -36,10 +36,11 @@ Users should be able to:
 ### Built With
 
 - Semantic HTML
-- CSS variables
 - CSS Flexbox
 - CSS Grid
 - SCSS
+- CSS/SCSS variables
+- SCSS mixins and extends
 - JavaScript
 - Mobile-first workflow
 
