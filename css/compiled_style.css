@@ -227,7 +227,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .button {
-  font: 500 clamp(0.875rem, 3.5vw, 1rem)/1.5 "Figtree", sans-serif;
+  font: 500 clamp(0.875rem, 0.642rem + 0.995vw, 1rem)/1.5 "Figtree", sans-serif;
   background-color: var(--white);
   border: none;
   border-radius: 5px;
